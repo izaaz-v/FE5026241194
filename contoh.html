@@ -41,9 +41,7 @@
         </button>
       </div>
 
-      <div class="toast-body">
-        Database backup completed successfully. All files are secured.
-      </div>
+      <div class="toast-body">The button did nothing. Or did it? ',:I</div>
     </div>
     <p>
       <img
@@ -52,5 +50,12 @@
         style="max-width: 60%; height: auto; display: block; margin: 0 auto 1em"
       />
     </p>
+    <script>
+      $(document).ready(function () {
+        $("#backupBtn").click(function () {
+          $(".toast").toast("show");
+        });
+      });
+    </script>
   </body>
 </html>
